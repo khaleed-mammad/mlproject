@@ -29,17 +29,17 @@ MODLIBS=           $(LOCALMODLIBS) $(BASEMODLIBS)
 
 # === Variables set by configure
 VERSION=	3.11
-srcdir=		/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ecjhryeyil/croot/python-split_1677695225335/work
-VPATH=		/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ecjhryeyil/croot/python-split_1677695225335/work
-abs_srcdir=	/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ecjhryeyil/croot/python-split_1677695225335/work
-abs_builddir=	/private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ecjhryeyil/croot/python-split_1677695225335/work/build-static
+srcdir=		/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_224hzq1x7f/croot/python-split_1713544626963/work
+VPATH=		/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_224hzq1x7f/croot/python-split_1713544626963/work
+abs_srcdir=	/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_224hzq1x7f/croot/python-split_1713544626963/work
+abs_builddir=	/private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_224hzq1x7f/croot/python-split_1713544626963/work/build-static
 
 
 CC=		arm64-apple-darwin20.0.0-clang
 CXX=		arm64-apple-darwin20.0.0-clang++
 MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
-AR=		/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ecjhryeyil/croot/python-split_1677695225335/_build_env/bin/arm64-apple-darwin20.0.0-llvm-ar
+AR=		/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_224hzq1x7f/croot/python-split_1713544626963/_build_env/bin/arm64-apple-darwin20.0.0-llvm-ar
 READELF=	:
 SOABI=		cpython-311-darwin
 LDVERSION=	$(VERSION)$(ABIFLAGS)
@@ -49,7 +49,7 @@ GITTAG=
 GITBRANCH=	
 PGO_PROF_GEN_FLAG=-fprofile-instr-generate
 PGO_PROF_USE_FLAG=-fprofile-instr-use=code.profclangd
-LLVM_PROF_MERGER=/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ecjhryeyil/croot/python-split_1677695225335/_build_env/bin/llvm-profdata merge -output=code.profclangd *.profclangr
+LLVM_PROF_MERGER=/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_224hzq1x7f/croot/python-split_1713544626963/_build_env/bin/llvm-profdata merge -output=code.profclangd *.profclangr
 LLVM_PROF_FILE=LLVM_PROFILE_FILE="code-%p.profclangr"
 LLVM_PROF_ERR=no
 DTRACE=         
@@ -74,7 +74,7 @@ INSTALL_DATA=	${INSTALL} -m 644
 # rather than figuring out exactly which, we always give them executable mode.
 INSTALL_SHARED= ${INSTALL} -m 755
 
-MKDIR_P=	/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ecjhryeyil/croot/python-split_1677695225335/work/install-sh -c -d
+MKDIR_P=	/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_224hzq1x7f/croot/python-split_1713544626963/work/install-sh -c -d
 
 MAKESETUP=      $(srcdir)/Modules/makesetup
 
@@ -82,7 +82,7 @@ MAKESETUP=      $(srcdir)/Modules/makesetup
 OPT=		-DNDEBUG -fwrapv -O2 -Wall
 BASECFLAGS=	
 BASECPPFLAGS=	-IObjects -IInclude -IPython
-CONFIGURE_CFLAGS=	-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include -fdebug-prefix-map=/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ecjhryeyil/croot/python-split_1677695225335/work=/usr/local/src/conda/python-3.11.0 -fdebug-prefix-map=/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv=/usr/local/src/conda-prefix -arch arm64 
+CONFIGURE_CFLAGS=	-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include -fdebug-prefix-map=/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_224hzq1x7f/croot/python-split_1713544626963/work=/usr/local/src/conda/python-3.11.9 -fdebug-prefix-map=/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv=/usr/local/src/conda-prefix -arch arm64 
 # CFLAGS_NODIST is used for building the interpreter and stdlib C extensions.
 # Use it when a compiler flag should _not_ be part of the distutils CFLAGS
 # once Python is installed (Issue #21121).
@@ -93,7 +93,7 @@ CONFIGURE_CFLAGS_NODIST=  -std=c11 -Werror=implicit-function-declaration -fvisib
 CONFIGURE_LDFLAGS_NODIST=  -Wl,-export_dynamic -g
 # LDFLAGS_NOLTO is an extra flag to disable lto. It is used to speed up building
 # of _bootstrap_python and _freeze_module tools, which don't need LTO.
-CONFIGURE_LDFLAGS_NOLTO=-fno-lto
+CONFIGURE_LDFLAGS_NOLTO==thin
 CONFIGURE_CPPFLAGS=	-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -D_FORTIFY_SOURCE=2 -isystem /Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include -mmacosx-version-min=11.1 -I/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include
 CONFIGURE_LDFLAGS=	-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib -L/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib
 # Avoid assigning CFLAGS, LDFLAGS, etc. so users can use them on the
@@ -335,6 +335,7 @@ MODULE__HASHLIB_STATE=yes
 MODULE__HASHLIB_CFLAGS=-I/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include
 MODULE__HASHLIB_LDFLAGS=-L/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib   -lcrypto
 MODULE__TESTCAPI_STATE=yes
+MODULE__TESTCLINIC_STATE=yes
 MODULE__TESTINTERNALCAPI_STATE=yes
 MODULE__TESTBUFFER_STATE=yes
 MODULE__TESTIMPORTMULTIPLE_STATE=yes
@@ -356,7 +357,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--prefix=/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv' '--build=arm64-apple-darwin20.0.0' '--host=arm64-apple-darwin20.0.0' '--enable-ipv6' '--with-ensurepip=no' '--with-tzpath=/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/share/zoneinfo' '--with-computed-gotos' '--with-system-ffi' '--enable-loadable-sqlite-extensions' '--with-tcltk-includes=-I/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include' '--with-tcltk-libs=-L/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib -ltcl8.6 -ltk8.6' '--with-platlibdir=lib' '--with-lto' '--enable-optimizations' '-oldincludedir=/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ecjhryeyil/croot/python-split_1677695225335/_build_env/arm64-apple-darwin20.0.0/sysroot/usr/include' '--disable-shared' 'PROFILE_TASK=-m test --pgo' 'build_alias=arm64-apple-darwin20.0.0' 'host_alias=arm64-apple-darwin20.0.0' 'PKG_CONFIG_PATH=/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib/pkgconfig' 'MACHDEP=darwin' 'CC=arm64-apple-darwin20.0.0-clang' 'CFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include -fdebug-prefix-map=/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ecjhryeyil/croot/python-split_1677695225335/work=/usr/local/src/conda/python-3.11.0 -fdebug-prefix-map=/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv=/usr/local/src/conda-prefix -arch arm64 ' 'LDFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib -L/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib' 'CPPFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -D_FORTIFY_SOURCE=2 -isystem /Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include -mmacosx-version-min=11.1 -I/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include'
+CONFIG_ARGS=	 '--prefix=/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv' '--build=arm64-apple-darwin20.0.0' '--host=arm64-apple-darwin20.0.0' '--enable-ipv6' '--with-ensurepip=no' '--with-tzpath=/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/share/zoneinfo' '--with-computed-gotos' '--with-system-ffi' '--enable-loadable-sqlite-extensions' '--with-tcltk-includes=-I/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include' '--with-tcltk-libs=-L/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib -ltcl8.6 -ltk8.6' '--with-platlibdir=lib' '--with-lto' '--enable-optimizations' '-oldincludedir=/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_224hzq1x7f/croot/python-split_1713544626963/_build_env/arm64-apple-darwin20.0.0/sysroot/usr/include' '--disable-shared' 'PROFILE_TASK=-m test --pgo' 'build_alias=arm64-apple-darwin20.0.0' 'host_alias=arm64-apple-darwin20.0.0' 'PKG_CONFIG_PATH=/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib/pkgconfig' 'MACHDEP=darwin' 'CC=arm64-apple-darwin20.0.0-clang' 'CFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -isystem /Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include -fdebug-prefix-map=/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_224hzq1x7f/croot/python-split_1713544626963/work=/usr/local/src/conda/python-3.11.9 -fdebug-prefix-map=/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv=/usr/local/src/conda-prefix -arch arm64 ' 'LDFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib -L/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/lib' 'CPPFLAGS=-isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -D_FORTIFY_SOURCE=2 -isystem /Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include -mmacosx-version-min=11.1 -I/Users/khaleed_mammad/Desktop/Khalid/Data Science/Projects/MLProject/venv/include'
 
 
 # Subdirectories with code
@@ -618,6 +619,7 @@ OBJECT_OBJS=	\
 		Objects/unionobject.o \
 		Objects/weakrefobject.o
 
+DEEPFREEZE_C = Python/deepfreeze/deepfreeze.c
 DEEPFREEZE_OBJS = Python/deepfreeze/deepfreeze.o
 
 ##########################################################################
@@ -722,12 +724,15 @@ build_wasm: check-clean-src $(BUILDPYTHON) platform oldsharedmods python-config
 # Check that the source is clean when building out of source.
 check-clean-src:
 	@if test -n "$(VPATH)" -a \( \
-	    -f "$(srcdir)/Programs/python.o" \
-	    -o -f "$(srcdir)\Python/frozen_modules/importlib._bootstrap.h" \
+	    -f "$(srcdir)/$(BUILDPYTHON)" \
+	    -o -f "$(srcdir)/Programs/python.o" \
+	    -o -f "$(srcdir)/Python/frozen_modules/importlib._bootstrap.h" \
 	\); then \
 		echo "Error: The source directory ($(srcdir)) is not clean" ; \
 		echo "Building Python out of the source tree (in $(abs_builddir)) requires a clean source tree ($(abs_srcdir))" ; \
-		echo "Try to run: make -C \"$(srcdir)\" clean" ; \
+		echo "Build artifacts such as .o files, executables, and Python/frozen_modules/*.h must not exist within $(srcdir)." ; \
+		echo "Try to run:" ; \
+		echo "  (cd \"$(srcdir)\" && make clean || git clean -fdx -e Doc/venv)" ; \
 		exit 1; \
 	fi
 
@@ -864,7 +869,7 @@ $(srcdir)/Modules/_blake2/blake2s_impl.c: $(srcdir)/Modules/_blake2/blake2b_impl
 # -s, --silent or --quiet is always the first char.
 # Under BSD make, MAKEFLAGS might be " -s -v x=y".
 # Ignore macros passed by GNU make, passed after --
-sharedmods: $(PYTHON_FOR_BUILD_DEPS) pybuilddir.txt $(LIBMPDEC_A) $(LIBEXPAT_A)
+sharedmods: $(PYTHON_FOR_BUILD_DEPS) pybuilddir.txt $(LIBMPDEC_HEADERS) $(LIBMPDEC_A) $(LIBEXPAT_HEADERS) $(LIBEXPAT_A)
 	@case "`echo X $$MAKEFLAGS | sed 's/^X //;s/ -- .*//'`" in \
 	    *\ -s*|s*) quiet="-q";; \
 	    *) quiet="";; \
@@ -948,10 +953,11 @@ $(DLLLIBRARY) libpython$(LDVERSION).dll.a: $(LIBRARY_OBJS)
 # wasm assets directory is relative to current build dir, e.g. "./usr/local".
 # --preload-file turns a relative asset path into an absolute path.
 
+.PHONY: wasm_stdlib
+wasm_stdlib: $(WASM_STDLIB)
 $(WASM_STDLIB): $(srcdir)/Lib/*.py $(srcdir)/Lib/*/*.py \
 	    $(srcdir)/Tools/wasm/wasm_assets.py \
-	    Makefile pybuilddir.txt Modules/Setup.local \
-	    python.html python.worker.js
+	    Makefile pybuilddir.txt Modules/Setup.local
 	$(PYTHON_FOR_BUILD) $(srcdir)/Tools/wasm/wasm_assets.py \
 	    --buildroot . --prefix $(prefix)
 
@@ -1282,12 +1288,12 @@ regen-frozen: Tools/scripts/freeze_modules.py $(FROZEN_FILES_IN)
 # Deepfreeze targets
 
 .PHONY: regen-deepfreeze
-regen-deepfreeze: $(DEEPFREEZE_OBJS)
+regen-deepfreeze: $(DEEPFREEZE_C)
 
 DEEPFREEZE_DEPS=$(srcdir)/Tools/scripts/deepfreeze.py $(FREEZE_MODULE_DEPS) $(FROZEN_FILES_OUT)
 
 # BEGIN: deepfreeze modules
-Python/deepfreeze/deepfreeze.c: $(DEEPFREEZE_DEPS)
+$(DEEPFREEZE_C): $(DEEPFREEZE_DEPS)
 	$(PYTHON_FOR_FREEZE) $(srcdir)/Tools/scripts/deepfreeze.py \
 	Python/frozen_modules/importlib._bootstrap.h:importlib._bootstrap \
 	Python/frozen_modules/importlib._bootstrap_external.h:importlib._bootstrap_external \
@@ -1314,8 +1320,6 @@ Python/deepfreeze/deepfreeze.c: $(DEEPFREEZE_DEPS)
 	Python/frozen_modules/frozen_only.h:frozen_only \
 	-o Python/deepfreeze/deepfreeze.c
 # END: deepfreeze modules
-	@echo "Note: Deepfreeze may have added some global objects,"
-	@echo "      so run 'make regen-global-objects' if necessary."
 
 # We keep this renamed target around for folks with muscle memory.
 .PHONY: regen-importlib
@@ -1324,11 +1328,12 @@ regen-importlib: regen-frozen
 ############################################################################
 # Global objects
 
+# Dependencies which can add and/or remove _Py_ID() identifiers:
+# - deepfreeze.c
+# - "make clinic"
 .PHONY: regen-global-objects
-regen-global-objects: $(srcdir)/Tools/scripts/generate_global_objects.py
+regen-global-objects: $(srcdir)/Tools/scripts/generate_global_objects.py $(DEEPFREEZE_C) clinic
 	$(PYTHON_FOR_REGEN) $(srcdir)/Tools/scripts/generate_global_objects.py
-	@echo "Note: Global objects can be added or removed by other tools (e.g. deepfreeze), "
-	@echo "      so be sure to re-run regen-global-objects after those tools."
 
 ############################################################################
 # ABI
@@ -1347,8 +1352,10 @@ regen-limited-abi: all
 ############################################################################
 # Regenerate all generated files
 
+# "clinic" is regenerated implicitly via "regen-global-objects".
+.PHONY: regen-all
 regen-all: regen-opcode regen-opcode-targets regen-typeslots \
-	regen-token regen-ast regen-keyword regen-sre regen-frozen clinic \
+	regen-token regen-ast regen-keyword regen-sre regen-frozen \
 	regen-pegen-metaparser regen-pegen regen-test-frozenmain \
 	regen-global-objects
 	@echo
@@ -1429,8 +1436,8 @@ regen-pegen:
 	PYTHONPATH=$(srcdir)/Tools/peg_generator $(PYTHON_FOR_REGEN) -m pegen -q c \
 		$(srcdir)/Grammar/python.gram \
 		$(srcdir)/Grammar/Tokens \
-		-o $(srcdir)/Parser/parser.new.c
-	$(UPDATE_FILE) $(srcdir)/Parser/parser.c $(srcdir)/Parser/parser.new.c
+		-o $(srcdir)/Parser/parser.c.new
+	$(UPDATE_FILE) $(srcdir)/Parser/parser.c $(srcdir)/Parser/parser.c.new
 
 .PHONY=regen-ast
 regen-ast:
@@ -1844,6 +1851,10 @@ buildbottest: all
 		fi
 		$(TESTRUNNER) -j 1 -u all -W --slowest --fail-env-changed --timeout=$(TESTTIMEOUT) $(TESTOPTS)
 
+# Like testall, but run Python tests with HOSTRUNNER directly.
+hostrunnertest: all
+	$(RUNSHARED) $(HOSTRUNNER) ./$(BUILDPYTHON) -m test -u all $(TESTOPTS)
+
 pythoninfo: all
 		$(RUNSHARED) $(HOSTRUNNER) ./$(BUILDPYTHON) -m test.pythoninfo
 
@@ -1890,8 +1901,7 @@ altinstall: commoninstall
 
 commoninstall:  check-clean-src  \
 		altbininstall libinstall inclinstall libainstall \
-		sharedinstall oldsharedinstall altmaninstall \
-		
+		sharedinstall oldsharedinstall altmaninstall 
 
 # Install shared libraries enabled by Setup
 DESTDIRS=	$(exec_prefix) $(LIBDIR) $(BINLIBDEST) $(DESTSHARED)
@@ -1965,7 +1975,11 @@ altbininstall: $(BUILDPYTHON)
 			$(DESTDIR)$(BINDIR)/python$(VERSION)$(EXE); \
 	fi
 
-bininstall: altbininstall
+# We depend on commoninstall here to make sure the installation is already usable
+# before we possibly overwrite the global 'python3' symlink to avoid causing
+# problems for anything else trying to run 'python3' while we install, particularly
+# if we're installing in parallel with -j.
+bininstall: commoninstall altbininstall
 	if test ! -d $(DESTDIR)$(LIBPC); then \
 		echo "Creating directory $(LIBPC)"; \
 		$(INSTALL) -d -m $(DIRMODE) $(DESTDIR)$(LIBPC); \
@@ -2065,15 +2079,36 @@ TESTSUBDIRS=	ctypes/test \
 		lib2to3/tests/data \
 		lib2to3/tests/data/fixers \
 		lib2to3/tests/data/fixers/myfixes \
-		test test/audiodata \
-		test/capath test/cjkencodings \
-		test/data test/decimaltestdata \
-		test/dtracedata test/eintrdata \
-		test/encoded_modules test/imghdrdata \
-		test/libregrtest test/sndhdrdata \
-		test/subprocessdata test/support \
+		test \
+		test/audiodata \
+		test/certdata \
+		test/certdata/capath \
+		test/cjkencodings \
+		test/crashers \
+		test/configdata \
+		test/data \
+		test/decimaltestdata \
+		test/dtracedata \
+		test/encoded_modules \
+		test/imghdrdata \
+		test/leakers \
+		test/libregrtest \
+		test/regrtestdata \
+		test/regrtestdata/import_from_tests \
+		test/regrtestdata/import_from_tests/test_regrtest_b \
+		test/sndhdrdata \
+		test/subprocessdata \
+		test/support \
 		test/test_asyncio \
-		test/test_email test/test_email/data \
+		test/test_capi \
+		test/test_cppext \
+		test/test_dataclasses \
+		test/test_doctest \
+		test/test_email \
+		test/test_email/data \
+		test/test_future_stmt \
+		test/test_gdb \
+		test/test_inspect \
 		test/test_import \
 		test/test_import/data \
 		test/test_import/data/circular_imports \
@@ -2125,16 +2160,48 @@ TESTSUBDIRS=	ctypes/test \
 		test/test_importlib/zipdata01 \
 		test/test_importlib/zipdata02 \
 		test/test_json \
+		test/test_module \
 		test/test_peg_generator \
+		test/test_pydoc \
+		test/test_sqlite3 \
+		test/test_tomllib \
+		test/test_tomllib/data \
+		test/test_tomllib/data/invalid \
+		test/test_tomllib/data/invalid/array \
+		test/test_tomllib/data/invalid/array-of-tables \
+		test/test_tomllib/data/invalid/boolean \
+		test/test_tomllib/data/invalid/dates-and-times \
+		test/test_tomllib/data/invalid/dotted-keys \
+		test/test_tomllib/data/invalid/inline-table \
+		test/test_tomllib/data/invalid/keys-and-vals \
+		test/test_tomllib/data/invalid/literal-str \
+		test/test_tomllib/data/invalid/multiline-basic-str \
+		test/test_tomllib/data/invalid/multiline-literal-str \
+		test/test_tomllib/data/invalid/table \
+		test/test_tomllib/data/valid \
+		test/test_tomllib/data/valid/array \
+		test/test_tomllib/data/valid/dates-and-times \
+		test/test_tomllib/data/valid/multiline-basic-str \
 		test/test_tools \
-		test/test_warnings test/test_warnings/data \
-		test/test_zoneinfo test/test_zoneinfo/data \
+		test/test_warnings \
+		test/test_warnings/data \
+		test/test_zoneinfo \
+		test/test_zoneinfo/data \
+		test/tokenizedata \
 		test/tracedmodules \
-		test/xmltestdata test/xmltestdata/c14n-20 \
+		test/typinganndata \
+		test/xmltestdata \
+		test/xmltestdata/c14n-20 \
 		test/ziptestdata \
-		tkinter/test tkinter/test/test_tkinter \
+		tkinter/test \
+		tkinter/test/test_tkinter \
 		tkinter/test/test_ttk \
-		unittest/test unittest/test/testmock
+		unittest/test \
+		unittest/test/testmock \
+		test/test_concurrent_futures \
+		test/test_multiprocessing_fork \
+		test/test_multiprocessing_forkserver \
+		test/test_multiprocessing_spawn
 
 TEST_MODULES=yes
 libinstall:	all $(srcdir)/Modules/xxmodule.c
@@ -2475,12 +2542,15 @@ recheck:
 autoconf:
 	(cd $(srcdir); autoreconf -ivf -Werror)
 
+# See https://github.com/tiran/cpython_autoconf container
 .PHONY: regen-configure
 regen-configure:
 	@if command -v podman >/dev/null; then RUNTIME="podman"; else RUNTIME="docker"; fi; \
 	if ! command -v $$RUNTIME; then echo "$@ needs either Podman or Docker container runtime." >&2; exit 1; fi; \
 	if command -v selinuxenabled >/dev/null && selinuxenabled; then OPT=":Z"; fi; \
-	CMD="$$RUNTIME run --rm --pull=always -v $(abs_srcdir):/src$$OPT quay.io/tiran/cpython_autoconf:269"; \
+	# Manifest corresponds with tag '269' \
+	CPYTHON_AUTOCONF_MANIFEST="sha256:f370fee95eefa3d57b00488bce4911635411fa83e2d293ced8cf8a3674ead939" \
+	CMD="$$RUNTIME run --rm --pull=missing -v $(abs_srcdir):/src$$OPT quay.io/tiran/cpython_autoconf@$$CPYTHON_AUTOCONF_MANIFEST"; \
 	echo $$CMD; \
 	$$CMD || exit $?
 
@@ -2514,8 +2584,7 @@ rmtestturds:
 	-rm -f gb-18030-2000.xml
 
 docclean:
-	-rm -rf Doc/build
-	-rm -rf Doc/tools/sphinx Doc/tools/pygments Doc/tools/docutils
+	$(MAKE) -C $(srcdir)/Doc clean
 
 # like the 'clean' target but retain the profile guided optimization (PGO)
 # data.  The PGO data is only valid if source code remains unchanged.
@@ -2566,7 +2635,7 @@ clobber: clean
 # Make things extra clean, before making a distribution:
 # remove all generated files, even Makefile[.pre]
 # Keep configure and Python-ast.[ch], it's possible they can't be generated
-distclean: clobber
+distclean: clobber docclean
 	for file in $(srcdir)/Lib/test/data/* ; do \
 	    if test "$$file" != "$(srcdir)/Lib/test/data/README"; then rm "$$file"; fi; \
 	done
