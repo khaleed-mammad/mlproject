@@ -80,7 +80,7 @@ class DataTransformation:
                 input_feature_train_array, np.array(target_feature_train_df)
             ]
 
-            test_array = [
+            test_array = np.c_[
                 input_feature_test_array, np.array(target_feature_test_df)
             ]
 
