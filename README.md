@@ -1,1 +1,3 @@
-## END TO END ML Project
+# Student Exam Performance Predictor
+## Project Description
+The Student Exam Performance Predictor is a web application designed to predict a student's math score based on various input parameters such as gender, ethnicity, parental level of education, lunch type, test preparation course, writing score, and reading score. This application leverages machine learning to provide accurate predictions and helps in understanding the factors that influence students' performance in exams. 
